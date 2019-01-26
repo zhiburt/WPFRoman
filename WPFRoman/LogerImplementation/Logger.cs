@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WPFRoman.Log
+namespace WPFRoman.LogerImplementation
 {
     public class Logger
     {

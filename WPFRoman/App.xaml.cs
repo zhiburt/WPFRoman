@@ -1,6 +1,6 @@
 ﻿
 using System.Windows;
-using WPFRoman.Log;
+using WPFRoman.LogerImplementation;
 
 namespace WPFRoman 
 {

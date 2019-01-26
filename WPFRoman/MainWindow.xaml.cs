@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WPFRoman.DbContexts;
-using WPFRoman.Log;
+using WPFRoman.LogerImplementation;
 using WPFRoman.Models;
 using WPFRoman.View.Searcher;
 using WPFRoman.View.SorterDataGrid;
