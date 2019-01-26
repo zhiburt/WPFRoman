@@ -1,0 +1,31 @@
+﻿<Window x:Class="WPFRoman.View.Windows.SearchWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFRoman.View.Windows"
+        mc:Ignorable="d"
+        Title="SearchWindow" Height="450" Width="400" Icon="/static/images/icons/application_image.png">
+    <Window.Resources>
+        <BitmapImage  x:Key="NotFoundImage" UriSource="/static/images/icons/notFound_1.png"/>
+    </Window.Resources>
+
+    <Grid>
+        <DataGrid x:Name="SearchedList" AutoGenerateColumns="False"
+                      CanUserAddRows="False"
+                      CanUserReorderColumns="False"
+                      CanUserResizeColumns="False"
+                      CanUserResizeRows="False"
+                      ColumnWidth="*" 
+                  RowHeight="20"/>
+        <Grid x:Name="NotFound"  Visibility="Collapsed">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8*"></RowDefinition>
+                <RowDefinition Height="2*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Image VerticalAlignment="Center" HorizontalAlignment="Center" Source="{StaticResource NotFoundImage}" />
+            <TextBlock Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center"
+                       FontSize="20" FontFamily="Roboto">Not found any records</TextBlock>
+        </Grid>
+    </Grid>
+</Window>
