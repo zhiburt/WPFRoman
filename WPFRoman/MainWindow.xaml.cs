@@ -41,7 +41,6 @@ namespace WPFRoman
             mainWindowViewModel = new MainWindowViewModel(hospital);
             mainWindowViewModel.ChangeDoctorsEvent += () =>
             {
-                MainDataGrid.Items.Refresh();
                 logger.Information("Doctors was changed");
             };
             DataContext = mainWindowViewModel;
